@@ -20,7 +20,7 @@ function App() {
     }
   }
   const prevPage = () => {
-    if (page > 1 ) {
+    if (page > 1) {
       setpage((prev) => prev - 1)
     }
   }
@@ -29,11 +29,11 @@ function App() {
     <>
       <ProgressBar prevPage={prevPage} page={page} />
       <div className="flex flex-col justify-center items-center">
-      {page == 1 && <DescribesYou nextPage={nextPage} />}
-      {page == 2 && <Intrest nextPage={nextPage} />}
-      {page == 3 && <RightPlace nextPage={nextPage} />}
-      {page == 4 && <MathComfert nextPage={nextPage} />}
-      {page == 5 && <OnyourWay nextPage={nextPage} />}
+        {page == 1 && <DescribesYou nextPage={nextPage} />}
+        {page == 2 && <Intrest nextPage={nextPage} />}
+        {page == 3 && <RightPlace nextPage={nextPage} />}
+        {page == 4 && <MathComfert nextPage={nextPage} />}
+        {page == 5 && <OnyourWay nextPage={nextPage} />}
       </div>
     </>
   )

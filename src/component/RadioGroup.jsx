@@ -7,6 +7,8 @@ function RadioGroup({ setSelectedOption, setIsdisabled, radioData }) {
     setIsdisabled(false)
   };
 
+  // console.log(radioData[0].value.split(" ")[0],"+",radioData[0].value.split(" ").slice(1).join(' '))
+
   return (
     <div className='flex flex-col items-center smooth-entry'>
       {radioData.map((item, i) => {
@@ -18,7 +20,12 @@ function RadioGroup({ setSelectedOption, setIsdisabled, radioData }) {
             value={item.value}
             onChange={handleOptionChange}
           />
-          <div><label className='label1' htmlFor={item.id}>{item.value}</label></div>
+          <div><label className='label1' htmlFor={item.id}>
+            <div className="flex">
+              <img className='h-27' src={item.img} alt="" />
+              <p className='pl-4 my-auto text-sm'><span className='font-medium'>{item.value.split(" ")[0]}&nbsp;</span>{item.value.split(" ").slice(1).join(' ')}</p>
+            </div>
+          </label></div>
         </div>
       })}
     </div>

@@ -4,7 +4,6 @@ label {display: block;}
 input + div .label1 {
   cursor: pointer;
   width: 450px;
-  padding: 12px;
   border: 2px solid rgb(168, 168, 168);
   margin: 5px;
   border-radius: 5px;
@@ -16,8 +15,8 @@ input:checked + div .label1 {
 
 input + div .label2 {
   cursor: pointer;
-  width: 150px;
-  padding: 36px;
+  width: 250px;
+  padding: 30px;
   border: 2px solid rgb(253, 242, 242);
   margin: 5px;
   border-radius: 5px;
@@ -69,5 +68,8 @@ input:checked + div .label2 {
 @media only screen and (max-width: 750px) {
   input + div .label1 {
     width: 350px;
+  }
+  input + div .label2 {
+    padding: 20px;
   }
 }

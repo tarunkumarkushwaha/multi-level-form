@@ -23,21 +23,25 @@ const MathComfert = ({ nextPage }) => {
       id: "option1",
       value: "Arithmetic",
       type: "Introductory",
+      formula:<>5 x 1 /2 = ?</>
     },
     {
       id: "option2",
       value: "Basic Algebra",
       type: "Foundational",
+      formula:<>3x + 5 = 4</>
     },
     {
       id: "option3",
       value: "Intermediate Algebra",
       type: "Introductory",
+      formula:<>x = (-b ± √(b<sup>2</sup> - 4ac)) <hr /> <span className='ml-16'>(2a)</span></>
     },
     {
       id: "option4",
       value: "Calculus Advanced",
       type: "Advanced",
+      formula:<>x = dx<sup>2</sup> + dx + 2 = 10 </>
     },
   ]
   return (
@@ -46,7 +50,7 @@ const MathComfert = ({ nextPage }) => {
         <h1 className='font-bold md:text-2xl text-xl text-gray-900'>What is your math comfort level?</h1>
         <h2 className='md:text-sm text-xs text-center md:m-3 m-1 text-gray-700'>Choose the highest level you feel confident in - you can always adjust later.</h2>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex flex-row flex-wrap justify-center items-center">
         {radioData.map((item, i) => {
           return <div key={i}>
             <input
@@ -57,10 +61,12 @@ const MathComfert = ({ nextPage }) => {
               onChange={handleOptionChange}
             />
             <div><label className='label2 smooth-entry' htmlFor={item.id}>
-              <div className='flex flex-col justify-center items-center'>
-                <h2 className="">5 x 1 / 2</h2>
-                <h2 className="font-bold text-gray-800">Arithmetic</h2>
-                <h2 className='text-gray-500'>Introductory</h2>
+              <div className='flex flex-col sm:h-28 h-20 justify-between items-center'>
+                <h2 className="">{item.formula}</h2>
+                <div>
+                <h2 className="text-center font-bold text-gray-800">{item.value}</h2>
+                <h2 className='text-center  text-gray-500'>{item.type}</h2>
+                </div>
               </div>
             </label></div>
           </div>
