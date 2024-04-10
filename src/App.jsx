@@ -28,11 +28,13 @@ function App() {
   return (
     <>
       <ProgressBar prevPage={prevPage} page={page} />
+      <div className="flex flex-col justify-center items-center">
       {page == 1 && <DescribesYou nextPage={nextPage} />}
       {page == 2 && <Intrest nextPage={nextPage} />}
       {page == 3 && <RightPlace nextPage={nextPage} />}
       {page == 4 && <MathComfert nextPage={nextPage} />}
       {page == 5 && <OnyourWay nextPage={nextPage} />}
+      </div>
     </>
   )
 }

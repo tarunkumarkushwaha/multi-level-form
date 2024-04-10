@@ -19,7 +19,6 @@ export const Userdataslice = createSlice({
     },
     setintrest: (state, action) => {
       state.intrest = action.payload
-      console.log(state.intrest)
     },
     setmathefficiency: (state, action) => {
       state.mathefficiency = action.payload

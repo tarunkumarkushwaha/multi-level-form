@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 const ProgressBar = ({prevPage,page}) => {
   const [progressWidth, setprogressWidth] = useState(0)
-  console.log(progressWidth)
+  // console.log(progressWidth)
   useEffect(() => {
     setprogressWidth(page/5*100)
   }, [page])

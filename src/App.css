@@ -1,15 +1,73 @@
 input {display: none;}
 label {display: block;}
 
-input + div label {
+input + div .label1 {
   cursor: pointer;
   width: 450px;
-  padding: 16px;
+  padding: 12px;
   border: 2px solid rgb(168, 168, 168);
   margin: 5px;
   border-radius: 5px;
 }
 
-input:checked + div label {
+input:checked + div .label1 {
   border: 2px solid rgb(41, 41, 41);
+}
+
+input + div .label2 {
+  cursor: pointer;
+  width: 150px;
+  padding: 36px;
+  border: 2px solid rgb(253, 242, 242);
+  margin: 5px;
+  border-radius: 5px;
+}
+
+input:checked + div .label2 {
+  border: 2px solid rgb(243, 195, 195);
+}
+
+.smooth-entry {
+  animation-name: entry;
+  animation-duration: 0.25s;
+}
+
+@keyframes entry {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  15% {
+    opacity: 0.2;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  35% {
+    opacity: 0.35;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  input + div .label1 {
+    width: 350px;
+  }
 }

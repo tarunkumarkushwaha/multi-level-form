@@ -40,11 +40,11 @@ const Intrest = ({ nextPage }) => {
 return (
   <>
     <div className="flex flex-col justify-center items-center p-3">
-      <h1 className='font-bold text-2xl text-gray-900'>Which are you most interested in?</h1>
-      <h2 className='text-sm text-gray-700 m-3'>Choose just one. This will help us get you started (but won't limit your experience).</h2>
+      <h1 className='font-bold md:text-2xl text-xl text-gray-900'>Which are you most interested in?</h1>
+      <h2 className='md:text-sm text-xs text-center md:m-3 m-1 text-gray-700'>Choose just one. This will help us get you started (but won't limit your experience).</h2>
     </div>
     <RadioGroup radioData={radioData} setSelectedOption={setSelectedOption} setIsdisabled={setIsdisabled} />
-    <div className="absolute bottom-4 left-[45%] flex justify-center items-center">
+    <div className="absolute sm:bottom-10 bottom-16 left-[50%] -translate-y-1/2 -translate-x-1/2 flex justify-center items-center">
       <button disabled={isdisabled} className={`p-2 ${!isdisabled ? "bg-black" : "bg-slate-400"} text-white px-10 rounded-lg`} onClick={nextpagehandler}>Continue</button>
     </div>
   </>

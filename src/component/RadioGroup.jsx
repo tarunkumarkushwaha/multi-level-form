@@ -8,7 +8,7 @@ function RadioGroup({ setSelectedOption, setIsdisabled, radioData }) {
   };
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center smooth-entry'>
       {radioData.map((item, i) => {
         return <div key={i}>
           <input
@@ -18,7 +18,7 @@ function RadioGroup({ setSelectedOption, setIsdisabled, radioData }) {
             value={item.value}
             onChange={handleOptionChange}
           />
-          <div><label htmlFor={item.id}>{item.value}</label></div>
+          <div><label className='label1' htmlFor={item.id}>{item.value}</label></div>
         </div>
       })}
     </div>
