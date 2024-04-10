@@ -23,25 +23,25 @@ const MathComfert = ({ nextPage }) => {
       id: "option1",
       value: "Arithmetic",
       type: "Introductory",
-      formula:<>5 x 1 /2 = ?</>
+      formula: <>5 x 1 /2 = ?</>
     },
     {
       id: "option2",
       value: "Basic Algebra",
       type: "Foundational",
-      formula:<>3x + 5 = 4</>
+      formula: <>3x + 5 = 4</>
     },
     {
       id: "option3",
       value: "Intermediate Algebra",
       type: "Introductory",
-      formula:<>x = (-b ± √(b<sup>2</sup> - 4ac)) <hr /> <span className='ml-16'>(2a)</span></>
+      formula: <>x = (-b ± √(b<sup>2</sup> - 4ac)) <hr /> <span className='ml-16'>(2a)</span></>
     },
     {
       id: "option4",
       value: "Calculus Advanced",
       type: "Advanced",
-      formula:<>x = dx<sup>2</sup> + dx + 2 = 10 </>
+      formula: <>x = dx<sup>2</sup> + dx + 2 = 10 </>
     },
   ]
   return (
@@ -64,8 +64,8 @@ const MathComfert = ({ nextPage }) => {
               <div className='flex flex-col sm:h-28 h-24 justify-between items-center'>
                 <h2 className="text-sm">{item.formula}</h2>
                 <div>
-                <h2 className="text-center font-bold text-gray-800">{item.value}</h2>
-                <h2 className='text-center  text-gray-500'>{item.type}</h2>
+                  <h2 className="text-center font-bold text-gray-800">{item.value}</h2>
+                  <h2 className='text-center  text-gray-500'>{item.type}</h2>
                 </div>
               </div>
             </label></div>
@@ -73,7 +73,7 @@ const MathComfert = ({ nextPage }) => {
         })}
 
       </div>
-      <div className="absolute sm:bottom-6 bottom-0 left-[50%] -translate-y-1/2 -translate-x-1/2 flex justify-center items-center">
+      <div className="flex justify-center items-center m-10">
         <button disabled={isdisabled} className={`p-2 ${!isdisabled ? "bg-black" : "bg-slate-400"} text-white px-10 rounded-lg`} onClick={nextpagehandler}>Continue</button>
       </div>
     </>
