@@ -28,7 +28,7 @@ input:checked + div .label2 {
 
 .smooth-entry {
   animation-name: entry;
-  animation-duration: 0.25s;
+  animation-duration: 0.1s;
 }
 
 @keyframes entry {
@@ -71,5 +71,6 @@ input:checked + div .label2 {
   }
   input + div .label2 {
     padding: 20px;
+    width: 180px;
   }
 }

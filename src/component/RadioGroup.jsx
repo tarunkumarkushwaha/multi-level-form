@@ -21,8 +21,8 @@ function RadioGroup({ setSelectedOption, setIsdisabled, radioData }) {
             onChange={handleOptionChange}
           />
           <div><label className='label1' htmlFor={item.id}>
-            <div className="flex">
-              <img className='h-27' src={item.img} alt="" />
+            <div className="flex h-12">
+              <img className='h-10' src={item.img} alt="" />
               <p className='pl-4 my-auto text-sm'><span className='font-medium'>{item.value.split(" ")[0]}&nbsp;</span>{item.value.split(" ").slice(1).join(' ')}</p>
             </div>
           </label></div>

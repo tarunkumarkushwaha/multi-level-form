@@ -61,8 +61,8 @@ const MathComfert = ({ nextPage }) => {
               onChange={handleOptionChange}
             />
             <div><label className='label2 smooth-entry' htmlFor={item.id}>
-              <div className='flex flex-col sm:h-28 h-20 justify-between items-center'>
-                <h2 className="">{item.formula}</h2>
+              <div className='flex flex-col sm:h-28 h-24 justify-between items-center'>
+                <h2 className="text-sm">{item.formula}</h2>
                 <div>
                 <h2 className="text-center font-bold text-gray-800">{item.value}</h2>
                 <h2 className='text-center  text-gray-500'>{item.type}</h2>
@@ -73,7 +73,7 @@ const MathComfert = ({ nextPage }) => {
         })}
 
       </div>
-      <div className="absolute sm:bottom-10 bottom-16 left-[50%] -translate-y-1/2 -translate-x-1/2 flex justify-center items-center">
+      <div className="absolute sm:bottom-6 bottom-0 left-[50%] -translate-y-1/2 -translate-x-1/2 flex justify-center items-center">
         <button disabled={isdisabled} className={`p-2 ${!isdisabled ? "bg-black" : "bg-slate-400"} text-white px-10 rounded-lg`} onClick={nextpagehandler}>Continue</button>
       </div>
     </>
