@@ -1,1 +1,15 @@
+input {display: none;}
+label {display: block;}
 
+input + div label {
+  cursor: pointer;
+  width: 450px;
+  padding: 16px;
+  border: 2px solid rgb(168, 168, 168);
+  margin: 5px;
+  border-radius: 5px;
+}
+
+input:checked + div label {
+  border: 2px solid rgb(41, 41, 41);
+}
